@@ -1,3 +1,6 @@
+-- Made by chillz, ok
+
+
 -- Gui to Lua
 -- Version: 3.2
 
@@ -146,23 +149,23 @@ local function DJZDV_fake_script() -- ChatBtn.LocalScript
 	local script = Instance.new('LocalScript', ChatBtn)
 
 	local txtbox = script.Parent.Parent.Chat
-	local delay = script.Parent.Parent.DelayBox
-	local btn = script.Parent
-	btn.MouseButton1Click:Connect(function()
-		local keywords = { "ass", "cum", "cock", "fuck", "Fuck", "asshole", "Asshole", "cock", "Cock", "rape", "boobs", "Boobs", "Titties", "titties", "sex", "hoe", "porn", "nigga", "penis", "beaner", "BOOBS", "TITTIES", "PENIS", "THOT", "XXX", "HENTAI", "Hentai", "hentai", "bitch", "Bitch", "BITCH", "Bitches", "bitches", "BITCHES", "shit", "Shit", "SHIT", "cock", "COCK", "RAPE", "kys", "KYS", "Kys", "CUM", "BUTTHOLE", "MASTURBATE", "masturbate", "big black cock", "Kys Bitch", "KYS BITCH", "kys bitch", "Blowjob", "blowjob", "BLOWJOB", "bites your cock", "Bites your cock", "cock sucker", "fat ass hoe" } --Keyword
-		local replace = { "а⁥⁥⁥⁥ѕѕ", "с⁥⁥⁥⁥um", "сосk", "fu𐌑𝖔 ͜ ͣ c𐌑ḳ", "fu𐌑𝖔 ͜ ͣ c𐌑ḳ", "аѕѕһоlе", "аѕѕһоlе", "сосk", "сосk", "rаре", "Вoobs", "Вoobs", "Тitties", "Тitties", "s⁥⁥⁥⁥⁥⁥ех", "һое", "рогn", "п⁥iɡ⁥ɡ⁥а", "реп⁥is", "bеаn⁥ег", "ВOOBS", "ТITTIЕS", "РЕNIS", "ТН⁥⁥⁥⁥⁥ОТ", "ΧΧΧ", "НЕΝТАӀ", "НЕΝТАӀ", "НЕΝТАӀ", "ВI⁥⁥⁥⁥⁥⁥TСН", "ВI⁥⁥⁥⁥⁥⁥TСН", "ВI⁥⁥⁥⁥⁥⁥TСН", "ВIT⁥⁥⁥⁥⁥⁥⁥СНEЅ", "ВIT⁥⁥⁥⁥⁥⁥⁥СНEЅ", "ВIT⁥⁥⁥⁥⁥⁥⁥СНEЅ", "ЅНIТ", "ЅНIТ", "ЅНIТ", "СОCK", "СОCK", "RАРЕ", "К⁥⁥⁥⁥⁥YЅ", "К⁥⁥⁥⁥⁥YЅ", "К⁥⁥⁥⁥⁥YЅ", "СUМ", "ВUТТ⁥⁥⁥⁥НOLЕ", "МАЅТURВАТЕ", "МАЅТURВАТЕ", "big black со⁥⁥⁥сk", "К⁥⁥⁥⁥⁥YЅ ВI⁥⁥⁥⁥⁥⁥TСН", "К⁥⁥⁥⁥⁥YЅ ВI⁥⁥⁥⁥⁥⁥TСН", "К⁥⁥⁥⁥⁥YЅ ВI⁥⁥⁥⁥⁥⁥TСН", "Вӏоwjob", "Вӏоwjob", "Вӏоwjob", "Віtеѕ уоur сосk", "Віtеѕ уоur сосk", "сосk suсkеr", "f⁥аt а⁥ѕѕ һое"  } --Replace
-		local message = txtbox.Text
-		for word in string.gmatch(message, "%S+") do
-			for i, key in ipairs(keywords) do
-				if word == key then
-					word = replace[i]
-					break
-				end
-			end
-			game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(word, "All")
-			wait(tonumber(delay.Text))
-		end
-	end)
+local delay = script.Parent.Parent.DelayBox
+local btn = script.Parent
+btn.MouseButton1Click:Connect(function()
+    local keywords = { "ass", "cum", "cock", "fuck", "asshole", "rape", "boobs", "titties", "sex", "hoe", "porn", "nigga", "penis", "beaner", "thot", "xxx", "hentai", "bitch", "bitches", "shit", "kys", "butthole", "masturbate", "big black cock", "blowjob", "bites your cock", "cock sucker", "fat ass hoe" } --Keyword
+    local replace = { "╨░тБетБетБетБе╤Х╤Х", "╤БтБетБетБетБеum", "╤Б╨╛╤Бk", "fuЁРМСЁЭЦФ ═Ь ═г cЁРМСс╕│", "╨░╤Х╤Х╥╗╨╛l╨╡", "r╨░╤А╨╡", "╨Тoobs", "╨вitties", "sтБетБетБетБетБетБе╨╡╤Е", "╥╗╨╛╨╡", "╤А╨╛╨│n", "╨┐тБеi╔бтБе╔бтБе╨░", "╤А╨╡╨┐тБеis", "b╨╡╨░nтБе╨╡╨│", "╨в╨ЭтБетБетБетБетБе╨Ю╨в", "╬з╬з╬з", "╨Э╨Х╬Э╨в╨Р╙А", "╨ТIтБетБетБетБетБетБеT╨б╨Э", "╨ТITтБетБетБетБетБетБетБе╨б╨ЭE╨Е", "╨Е╨ЭI╨в", "╨ЪтБетБетБетБетБеY╨Е", "╨ТU╨в╨втБетБетБетБе╨ЭOL╨Х", "╨Ь╨Р╨Е╨вUR╨Т╨Р╨в╨Х", "big black ╤Б╨╛тБетБетБе╤Бk", "╨Т╙П╨╛wjob", "╨Т╤Цt╨╡╤Х ╤Г╨╛ur ╤Б╨╛╤Бk", "╤Б╨╛╤Бk su╤Бk╨╡r", "fтБе╨░t ╨░тБе╤Х╤Х ╥╗╨╛╨╡" } --Replace
+    local message = string.lower(txtbox.Text)
+    for word in string.gmatch(message, "%S+") do
+        for i, key in ipairs(keywords) do
+            if word == string.lower(key) then
+                word = replace[i]
+                break
+            end
+        end
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(word, "All")
+        wait(tonumber(delay.Text))
+    end
+end)
 end
 coroutine.wrap(DJZDV_fake_script)()
 local function YKADJY_fake_script() -- Frame.LocalScript 
@@ -188,3 +191,4 @@ local function AYOPMNY_fake_script() -- minimze.LocalScript
 	end)
 end
 coroutine.wrap(AYOPMNY_fake_script)()
+
